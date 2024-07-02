@@ -1,0 +1,21 @@
+<!-- Configuration de Hibernate -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuration de la source de données -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/login</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+       	<!-- Création automatique des tables -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Autres propriétés de configuration -->
+     	<mapping class="model.Login"/>
+     	<mapping class="model.Salles"/>
+     	<mapping class="model.Absence"/>
+     	<mapping class="model.Classe"/>
+     	<mapping class="model.Devoir"/>
+     	<mapping class="model.Enfants"/>
+     	<mapping class="model.Groupe"/>
+     	<mapping class="model.Recommandations"/>
+     	<mapping class="model.Seance"/>
+    </session-factory>
+</hibernate-configuration>
